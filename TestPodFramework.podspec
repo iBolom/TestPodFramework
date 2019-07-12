@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.platform  = :ios
+  s.platform = :ios
   s.name = 'TestPodFramework'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = 'TestPodFramework'
   s.homepage = 'https://github.com/iBolom/TestPodFramework.git'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.static_framework = false
   s.frameworks = 'UIKit', 'Foundation'
   s.module_name = 'TestPodFramework'
+  s.xcconfig = { "OTHER_LINK_FLAG" => '$(inherited) -ObjC'}
 end
